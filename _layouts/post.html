@@ -27,19 +27,6 @@ layout: default
   
   <footer class="post-footer">
     <hr>
-    <nav class="post-navigation">
-      {% if page.previous %}
-        <a href="{{ page.previous.url | relative_url }}" class="prev">
-          ← {{ page.previous.title | truncate: 50 }}
-        </a>
-      {% endif %}
-      
-      {% if page.next %}
-        <a href="{{ page.next.url | relative_url }}" class="next">
-          {{ page.next.title | truncate: 50 }} →
-        </a>
-      {% endif %}
-    </nav>
   </footer>
 </article>
 

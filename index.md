@@ -14,17 +14,17 @@ title: 홈
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 30px 0;">
   <div style="padding: 20px; background-color: #252525; border-left: 4px solid #4ea9da; border-radius: 5px;">
-    <h3>� <a href="{{ '/blog.html' | relative_url }}">블로그</a></h3>
+    <h3>📝 <a href="{{ '/blog.html' | relative_url }}">블로그</a></h3>
     <p>학습 내용과 프로젝트 기록</p>
   </div>
   
   <div style="padding: 20px; background-color: #252525; border-left: 4px solid #4ea9da; border-radius: 5px;">
-    <h3>� <a href="{{ '/projects.html' | relative_url }}">프로젝트</a></h3>
+    <h3>🚀 <a href="{{ '/projects.html' | relative_url }}">프로젝트</a></h3>
     <p>진행한 프로젝트 포트폴리오</p>
   </div>
   
   <div style="padding: 20px; background-color: #252525; border-left: 4px solid #4ea9da; border-radius: 5px;">
-    <h3>� <a href="{{ '/resources.html' | relative_url }}">학습 자료</a></h3>
+    <h3>📚 <a href="{{ '/resources.html' | relative_url }}">학습 자료</a></h3>
     <p>유용한 강의 및 참고 자료</p>
   </div>
   
@@ -69,7 +69,7 @@ title: 홈
 ## 💡 주요 기술 스택
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0;">
-  <span style="padding: 8px 15px; background-color: #2a2a2a; border: 1px solid #333; border-radius: 20px;">� Python</span>
+  <span style="padding: 8px 15px; background-color: #2a2a2a; border: 1px solid #333; border-radius: 20px;">🐍 Python</span>
   <span style="padding: 8px 15px; background-color: #2a2a2a; border: 1px solid #333; border-radius: 20px;">⚙️ C++</span>
   <span style="padding: 8px 15px; background-color: #2a2a2a; border: 1px solid #333; border-radius: 20px;">🤖 ROS</span>
   <span style="padding: 8px 15px; background-color: #2a2a2a; border: 1px solid #333; border-radius: 20px;">👁️ OpenCV</span>

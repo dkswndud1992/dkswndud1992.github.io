@@ -28,11 +28,19 @@ layout: default
   <footer class="post-footer">
     <hr>
     <nav class="post-navigation">
-      {% if page.previous %}
-        <a href="{{ page.previous.url | relative_url }}" class="prev">← {{ page.previous.title }}</a>
+      {% assign prev_post = page.previous %}
+      {% assign next_post = page.next %}
+      
+      {% if prev_post %}
+        <a href="{{ prev_post.url | relative_url }}" class="prev">
+          ← {{ prev_post.title | truncate: 50 }}
+        </a>
       {% endif %}
-      {% if page.next %}
-        <a href="{{ page.next.url | relative_url }}" class="next">{{ page.next.title }} →</a>
+      
+      {% if next_post %}
+        <a href="{{ next_post.url | relative_url }}" class="next">
+          {{ next_post.title | truncate: 50 }} →
+        </a>
       {% endif %}
     </nav>
   </footer>

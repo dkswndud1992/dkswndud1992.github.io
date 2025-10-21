@@ -1,5 +1,9 @@
 source "https://rubygems.org"
 
+# Faraday 의존성 문제 해결
+gem 'faraday', '~> 2.7', '>= 2.7.11'
+gem 'faraday-retry'
+
 # GitHub Pages gem
 gem "github-pages", group: :jekyll_plugins
 

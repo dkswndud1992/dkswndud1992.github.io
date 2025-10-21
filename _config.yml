@@ -38,7 +38,6 @@ incremental: false
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-seo-tag
 
 # ============================================
 # Collections (선택사항)

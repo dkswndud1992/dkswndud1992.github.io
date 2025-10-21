@@ -5,18 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <!-- SEO -->
-  {% seo title=false %}
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <title>{{ page.title | default: site.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 }}">
+  <meta name="author" content="{{ site.author }}">
   
-  <!-- Styles -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  
-  <!-- Custom head -->
-  {% include head-custom.html %}
-  
-  <!-- Google Analytics -->
-  {% include analytics.html %}
 </head>
 <body>
   <div class="wrapper">
@@ -39,11 +32,11 @@
     </header>
     
     <!-- 검색 기능 -->
-    {% unless page.url == "/" %}
+    <!-- {% unless page.url == "/" %}
     <div class="search-wrapper">
       {% include search.html %}
     </div>
-    {% endunless %}
+    {% endunless %} -->
     
     <main class="main-content">
       {{ content }}

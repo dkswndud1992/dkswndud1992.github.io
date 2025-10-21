@@ -9,16 +9,13 @@ layout: default
       <time datetime="{{ page.date | date_to_xmlschema }}">
         {{ page.date | date: '%Y년 %m월 %d일' }}
       </time>
-      {% if page.author %} • {{ page.author }}{% endif %}
-      {% if page.tags %}
-        <br>
-        <span class="tags">
-          {% for tag in page.tags %}
-            <span class="tag">{{ tag }}</span>
-          {% endfor %}
-        </span>
-      {% endif %}
+      {{ page.author | prepend: ' • ' }}
     </p>
+    <div class="post-tags">
+      {% for tag in page.tags %}
+        <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
   </header>
   
   <div class="post-content">
@@ -27,8 +24,16 @@ layout: default
   
   <footer class="post-footer">
     <hr>
+    <div class="comments-section">
+      <h3>💬 댓글</h3>
+      <script src="https://utteranc.es/client.js"
+              repo="dkswndud1992/dkswndud1992.github.io"
+              issue-term="pathname"
+              label="comment"
+              theme="github-dark"
+              crossorigin="anonymous"
+              async>
+      </script>
+    </div>
   </footer>
 </article>
-
-<!-- 댓글 섹션 -->
-{% include comments.html %}

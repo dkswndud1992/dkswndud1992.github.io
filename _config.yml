@@ -2,7 +2,7 @@
 # Site Settings
 # ============================================
 title: 로봇공학 학습 블로그
-author: Gemini
+author: Bot-gym-c
 description: Jekyll과 GitHub Pages로 만든 로봇공학 및 프로그래밍 학습 블로그입니다.
 baseurl: "" # 서브디렉토리가 있으면 입력 (예: "/blog")
 url: "https://dkswndud1992.github.io" # 실제 사이트 URL
@@ -10,7 +10,10 @@ url: "https://dkswndud1992.github.io" # 실제 사이트 URL
 # ============================================
 # Theme & Appearance
 # ============================================
-# theme 설정 제거 - 커스텀 레이아웃 사용
+theme: jekyll-theme-minimal
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme
 
 # ============================================
 # Social Links
@@ -38,6 +41,7 @@ incremental: false
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-remote-theme
 
 # ============================================
 # Collections (선택사항)

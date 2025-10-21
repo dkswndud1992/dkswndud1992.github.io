@@ -33,7 +33,6 @@ permalink: /about/
 ## 📫 연락처
 
 - **GitHub**: [dkswndud1992](https://github.com/dkswndud1992)
-- **Email**: your-email@example.com
 - **LinkedIn**: 링크 추가
 
 ## 🎓 학력 & 경력

@@ -3,6 +3,9 @@ source "https://rubygems.org"
 # GitHub Pages gem - 모든 의존성 포함
 gem "github-pages", group: :jekyll_plugins
 
+# Jekyll Theme Minimal
+gem "jekyll-theme-minimal"
+
 # Webrick (Ruby 3.0+ 필요)
 gem "webrick", "~> 1.8"
 

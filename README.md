@@ -86,7 +86,6 @@ MIT License
 ## 📧 연락처
 
 - GitHub: [@dkswndud1992](https://github.com/dkswndud1992)
-- Email: your-email@example.com
 
 ---
 

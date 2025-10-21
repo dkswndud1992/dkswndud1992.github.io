@@ -106,7 +106,7 @@
 ### 즉시 수정할 것
 1. **`_config.yml`**:
    ```yaml
-   author: Gemini  # ← 실제 이름으로 변경
+   author: Bot-gym-c  # ← 실제 이름으로 변경
    ```
 
 2. **`about.md`**:

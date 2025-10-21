@@ -9,15 +9,15 @@ layout: default
       <time datetime="{{ page.date | date_to_xmlschema }}">
         {{ page.date | date: '%Y년 %m월 %d일' }}
       </time>
-      {% if page.author %} • {{ page.author }}{% endif %}
-      {% if page.tags %}
+      <!-- {% if page.author %} • {{ page.author }}{% endif %} -->
+      <!-- {% if page.tags %}
         <br>
         <span class="tags">
           {% for tag in page.tags %}
             <span class="tag">{{ tag }}</span>
           {% endfor %}
         </span>
-      {% endif %}
+      {% endif %} -->
     </p>
   </header>
   
@@ -31,4 +31,4 @@ layout: default
 </article>
 
 <!-- 댓글 섹션 -->
-{% include comments.html %}
+<!-- {% include comments.html %} -->

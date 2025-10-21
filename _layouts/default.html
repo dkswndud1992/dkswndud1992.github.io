@@ -8,16 +8,16 @@
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
   
   <!-- SEO -->
-  {% seo %}
+  <!-- {% seo %} -->
   
   <!-- Styles -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   
   <!-- Custom head -->
-  {% include head-custom.html %}
+  <!-- {% include head-custom.html %} -->
   
   <!-- Google Analytics -->
-  {% include analytics.html %}
+  <!-- {% include analytics.html %} -->
 </head>
 <body>
   <div class="wrapper">
@@ -40,11 +40,11 @@
     </header>
     
     <!-- 검색 기능 -->
-    {% if page.url != "/" %}
+    <!-- {% if page.url != "/" %}
     <div class="search-wrapper">
       {% include search.html %}
     </div>
-    {% endif %}
+    {% endif %} -->
     
     <main class="main-content">
       {{ content }}

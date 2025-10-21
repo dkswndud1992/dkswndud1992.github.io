@@ -26,11 +26,15 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+  auto_ids: true
+  hard_wrap: false
 
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
   - jekyll-sitemap
+
+# jekyll-seo-tag 임시 비활성화 (stack overflow 문제)
+# - jekyll-seo-tag
 
 # ============================================
 # Collections (선택사항)
@@ -49,8 +53,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "Gemini"
-      comments: true
 
 # ============================================
 # Exclude from processing

@@ -7,17 +7,18 @@
   
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
   
-  <!-- SEO -->
-  <!-- {% seo %} -->
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="author" content="{{ site.author }}">
   
   <!-- Styles -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   
   <!-- Custom head -->
-  <!-- {% include head-custom.html %} -->
+  {% include head-custom.html %}
   
   <!-- Google Analytics -->
-  <!-- {% include analytics.html %} -->
+  {% include analytics.html %}
 </head>
 <body>
   <div class="wrapper">
@@ -40,11 +41,11 @@
     </header>
     
     <!-- 검색 기능 -->
-    <!-- {% if page.url != "/" %}
+    {% unless page.url == "/" %}
     <div class="search-wrapper">
       {% include search.html %}
     </div>
-    {% endif %} -->
+    {% endunless %}
     
     <main class="main-content">
       {{ content }}

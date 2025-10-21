@@ -7,9 +7,13 @@
 - **해결**: `theme` 설정 제거 (주석 처리)
 - **추가**: `STATUS.md`, `DEPLOYMENT.md`, `LICENSE`를 exclude 목록에 추가
 
-### 2. ✅ Gemfile 중복 의존성 제거
-- **문제**: `github-pages` gem에 이미 포함된 플러그인들을 중복으로 선언
-- **해결**: Jekyll 플러그인 그룹 주석 처리 (github-pages가 자동으로 관리)
+### 2. ✅ Gemfile 최적화
+- **문제**: GitHub Pages의 기본 Gemfile과 불일치로 인한 의존성 경고
+- **해결**: 
+  - 불필요한 주석 및 중복 플러그인 선언 제거
+  - GitHub Pages 표준 Gemfile 형식으로 간소화
+  - `wdm` 버전을 `0.1.1`에서 `0.2.1`로 업데이트
+- **참고**: [GitHub Issue #104](https://github.com/actions/jekyll-build-pages/issues/104)
 
 ### 3. ✅ 페이지 Permalink 설정
 모든 주요 페이지에 명시적인 permalink 추가:

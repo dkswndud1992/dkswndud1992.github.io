@@ -2,7 +2,7 @@
 layout: post
 title: "GitHub Pages 블로그 시작하기"
 date: 2024-10-05
-author: Bot-gym-c
+author: botgymc
 tags: [GitHub, Jekyll, 블로그, 튜토리얼]
 ---
 

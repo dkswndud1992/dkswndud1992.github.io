@@ -2,7 +2,7 @@
 # Site Settings
 # ============================================
 title: 로봇공학 학습 블로그
-author: Bot-gym-c
+author: botgymc
 description: Jekyll과 GitHub Pages로 만든 로봇공학 및 프로그래밍 학습 블로그입니다.
 baseurl: "" # 서브디렉토리가 있으면 입력 (예: "/blog")
 url: "https://dkswndud1992.github.io" # 실제 사이트 URL

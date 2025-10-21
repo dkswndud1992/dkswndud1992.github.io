@@ -1,7 +1,7 @@
 ---
 title: "MCP 서버란? Model Context Protocol 완벽 가이드"
 date: 2025-10-21
-author: Bot-gym-c
+author: botgymc
 tags: [MCP, AI, Protocol, 개발도구, 튜토리얼]
 ---
 

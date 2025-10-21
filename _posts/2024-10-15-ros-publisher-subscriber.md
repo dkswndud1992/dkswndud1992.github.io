@@ -1,7 +1,7 @@
 ---
 title: "ROS 기초: Publisher와 Subscriber 패턴"
 date: 2024-10-15
-author: Bot-gym-c
+author: botgymc
 tags: [ROS, Python, 튜토리얼, 로봇공학]
 ---
 

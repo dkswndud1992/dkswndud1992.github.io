@@ -19,19 +19,10 @@ title: 홈
   </div>
   
   <div style="padding: 20px; background-color: #252525; border-left: 4px solid #4ea9da; border-radius: 5px;">
-    <h3>🚀 <a href="{{ '/projects' | relative_url }}">프로젝트</a></h3>
-    <p>진행한 프로젝트 포트폴리오</p>
-  </div>
-  
-  <div style="padding: 20px; background-color: #252525; border-left: 4px solid #4ea9da; border-radius: 5px;">
     <h3>📚 <a href="{{ '/resources' | relative_url }}">학습 자료</a></h3>
     <p>유용한 강의 및 참고 자료</p>
   </div>
   
-  <div style="padding: 20px; background-color: #252525; border-left: 4px solid #4ea9da; border-radius: 5px;">
-    <h3>🏷️ <a href="{{ '/tags' | relative_url }}">태그</a></h3>
-    <p>주제별 포스트 분류</p>
-  </div>
 </div>
 
 ---
@@ -95,6 +86,5 @@ title: 홈
 ---
 
 <div style="text-align: center; color: #666; font-size: 0.9em; margin-top: 40px;">
-  <p>💻 Built with Jekyll & GitHub Pages</p>
   <p><em>Last updated: {{ site.time | date: '%Y년 %m월 %d일' }}</em></p>
 </div>

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 프로젝트
+permalink: /projects/
 ---
 
 # 🚀 프로젝트 포트폴리오

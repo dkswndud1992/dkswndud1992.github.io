@@ -3,12 +3,12 @@ source "https://rubygems.org"
 # GitHub Pages gem (모든 의존성 자동 관리)
 gem "github-pages", group: :jekyll_plugins
 
-# Jekyll plugins
-group :jekyll_plugins do
-  gem "jekyll-feed"
-  gem "jekyll-seo-tag"
-  gem "jekyll-sitemap"
-end
+# Jekyll plugins (github-pages에 포함되어 있어 중복 불필요)
+# group :jekyll_plugins do
+#   gem "jekyll-feed"
+#   gem "jekyll-seo-tag"
+#   gem "jekyll-sitemap"
+# end
 
 # Windows 및 JRuby에서 tzinfo-data 필요
 platforms :mingw, :x64_mingw, :mswin, :jruby do

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 학습 자료
+permalink: /resources/
 ---
 
 # 📖 유용한 학습 자료

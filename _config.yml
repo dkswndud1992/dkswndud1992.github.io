@@ -10,7 +10,7 @@ url: "https://dkswndud1992.github.io" # 실제 사이트 URL
 # ============================================
 # Theme & Appearance
 # ============================================
-theme: null  # 테마 사용 안 함 - 커스텀 레이아웃 사용
+# theme 설정 제거 - 커스텀 레이아웃 사용
 
 # ============================================
 # Social Links
@@ -63,6 +63,9 @@ exclude:
   - .sass-cache/
   - .jekyll-cache/
   - README.md
+  - STATUS.md
+  - DEPLOYMENT.md
+  - LICENSE
 
 # ============================================
 # Analytics (선택사항)

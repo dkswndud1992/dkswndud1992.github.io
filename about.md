@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 소개
+permalink: /about/
 ---
 
 # 👤 소개

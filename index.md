@@ -14,22 +14,22 @@ title: 홈
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 30px 0;">
   <div style="padding: 20px; background-color: #252525; border-left: 4px solid #4ea9da; border-radius: 5px;">
-    <h3>📝 <a href="{{ '/blog.html' | relative_url }}">블로그</a></h3>
+    <h3>📝 <a href="{{ '/blog' | relative_url }}">블로그</a></h3>
     <p>학습 내용과 프로젝트 기록</p>
   </div>
   
   <div style="padding: 20px; background-color: #252525; border-left: 4px solid #4ea9da; border-radius: 5px;">
-    <h3>🚀 <a href="{{ '/projects.html' | relative_url }}">프로젝트</a></h3>
+    <h3>🚀 <a href="{{ '/projects' | relative_url }}">프로젝트</a></h3>
     <p>진행한 프로젝트 포트폴리오</p>
   </div>
   
   <div style="padding: 20px; background-color: #252525; border-left: 4px solid #4ea9da; border-radius: 5px;">
-    <h3>📚 <a href="{{ '/resources.html' | relative_url }}">학습 자료</a></h3>
+    <h3>📚 <a href="{{ '/resources' | relative_url }}">학습 자료</a></h3>
     <p>유용한 강의 및 참고 자료</p>
   </div>
   
   <div style="padding: 20px; background-color: #252525; border-left: 4px solid #4ea9da; border-radius: 5px;">
-    <h3>🏷️ <a href="{{ '/tags.html' | relative_url }}">태그</a></h3>
+    <h3>🏷️ <a href="{{ '/tags' | relative_url }}">태그</a></h3>
     <p>주제별 포스트 분류</p>
   </div>
 </div>
@@ -59,7 +59,7 @@ title: 홈
 {% endfor %}
 
 <p style="text-align: center; margin-top: 30px;">
-  <a href="{{ '/blog.html' | relative_url }}" style="display: inline-block; padding: 10px 30px; background-color: #4ea9da; color: #1e1e1e; text-decoration: none; border-radius: 5px; font-weight: bold;">
+  <a href="{{ '/blog' | relative_url }}" style="display: inline-block; padding: 10px 30px; background-color: #4ea9da; color: #1e1e1e; text-decoration: none; border-radius: 5px; font-weight: bold;">
     더 많은 포스트 보기 →
   </a>
 </p>

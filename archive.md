@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 아카이브
+permalink: /archive/
 ---
 
 # 📚 포스트 아카이브

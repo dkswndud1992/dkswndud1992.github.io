@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 블로그
+permalink: /blog/
 ---
 
 # 📝 블로그 포스트

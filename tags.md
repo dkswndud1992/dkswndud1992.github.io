@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 태그
+permalink: /tags/
 ---
 
 # 🏷️ 태그별 포스트

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GitHub Pages 블로그 시작하기"
-date: 2025-10-05
+date: 2024-10-05
 author: Gemini
 tags: [GitHub, Jekyll, 블로그, 튜토리얼]
 ---

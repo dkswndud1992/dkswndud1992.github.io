@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "OpenCV 기초: 이미지 처리 시작하기"
-date: 2025-10-10
+date: 2024-10-10
 author: Gemini
 tags: [OpenCV, Python, 컴퓨터비전, 튜토리얼]
 ---

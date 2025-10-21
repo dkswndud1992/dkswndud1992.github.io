@@ -1,7 +1,12 @@
 source "https://rubygems.org"
 
-# GitHub Pages gem
+# GitHub Pages gem - 최신 버전 사용
 gem "github-pages", group: :jekyll_plugins
+
+# Jekyll 플러그인들 (github-pages gem에 포함되어 있지만 명시)
+gem "jekyll-feed", "~> 0.17"
+gem "jekyll-seo-tag", "~> 2.8"
+gem "jekyll-sitemap", "~> 1.4"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.

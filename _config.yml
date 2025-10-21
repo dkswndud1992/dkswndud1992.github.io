@@ -26,15 +26,19 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-  auto_ids: true
-  hard_wrap: false
+  math_engine: mathjax
+
+highlighter: rouge
+
+# GitHub Pages 공식 설정
+safe: true
+lsi: false
+incremental: false
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-
-# jekyll-seo-tag 임시 비활성화 (stack overflow 문제)
-# - jekyll-seo-tag
+  - jekyll-seo-tag
 
 # ============================================
 # Collections (선택사항)

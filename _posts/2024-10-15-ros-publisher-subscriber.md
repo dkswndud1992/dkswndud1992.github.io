@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "ROS 기초: Publisher와 Subscriber 패턴"
 date: 2024-10-15
 author: Gemini

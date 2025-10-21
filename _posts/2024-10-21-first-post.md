@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "첫 번째 블로그 포스트"
 date: 2024-10-21
 author: Gemini

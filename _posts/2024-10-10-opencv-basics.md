@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "OpenCV 기초: 이미지 처리 시작하기"
 date: 2024-10-10
 author: Gemini

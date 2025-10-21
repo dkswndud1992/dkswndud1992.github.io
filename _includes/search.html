@@ -1,0 +1,72 @@
+<!-- Simple Jekyll Search -->
+<!-- https://github.com/christian-fei/Simple-Jekyll-Search -->
+
+<div class="search-container">
+  <input type="search" id="search-input" placeholder="🔍 검색어를 입력하세요...">
+  <ul id="results-container"></ul>
+</div>
+
+<script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '{{ "/search.json" | relative_url }}',
+    searchResultTemplate: '<li><a href="{url}">{title}</a><br><span class="search-date">{date}</span></li>',
+    noResultsText: '검색 결과가 없습니다.',
+    limit: 10,
+    fuzzy: false
+  })
+</script>
+
+<style>
+.search-container {
+  margin: 20px 0;
+}
+
+#search-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #333;
+  border-radius: 25px;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#search-input:focus {
+  border-color: #4ea9da;
+}
+
+#results-container {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#results-container li {
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #252525;
+  border-left: 3px solid #4ea9da;
+  border-radius: 5px;
+}
+
+#results-container a {
+  font-size: 1.1em;
+  color: #4ea9da;
+  text-decoration: none;
+}
+
+#results-container a:hover {
+  color: #6bc1e8;
+}
+
+.search-date {
+  color: #888;
+  font-size: 0.9em;
+}
+</style>

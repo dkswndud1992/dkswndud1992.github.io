@@ -1,0 +1,22 @@
+<!-- Google Analytics -->
+<!-- https://analytics.google.com/ 에서 계정 생성 후 측정 ID를 _config.yml에 추가 -->
+
+{% if site.google_analytics %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.google_analytics }}');
+</script>
+{% endif %}
+
+<!-- 
+사용 방법:
+1. https://analytics.google.com/ 에서 계정 생성
+2. 측정 ID(G-XXXXXXXXXX) 받기
+3. _config.yml에 추가:
+   google_analytics: G-XXXXXXXXXX
+4. default.html 레이아웃의 </head> 전에 {% include analytics.html %} 추가
+-->

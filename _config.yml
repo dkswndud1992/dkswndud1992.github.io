@@ -1,0 +1,80 @@
+# ============================================
+# Site Settings
+# ============================================
+title: 로봇공학 학습 블로그
+author: Gemini
+description: Jekyll과 GitHub Pages로 만든 로봇공학 및 프로그래밍 학습 블로그입니다.
+baseurl: "" # 서브디렉토리가 있으면 입력 (예: "/blog")
+url: "https://dkswndud1992.github.io" # 실제 사이트 URL
+
+# ============================================
+# Theme & Appearance
+# ============================================
+theme: jekyll-theme-minimal
+# remote_theme: pages-themes/minimal@v0.2.0 # 로컬에서 테스트할 때 사용
+
+# ============================================
+# Social Links
+# ============================================
+github_username: dkswndud1992
+# twitter_username: your_username
+# linkedin_username: your_username
+
+# ============================================
+# Build Settings
+# ============================================
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# ============================================
+# Collections (선택사항)
+# ============================================
+# collections:
+#   projects:
+#     output: true
+#     permalink: /projects/:path/
+
+# ============================================
+# Defaults
+# ============================================
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Gemini"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# ============================================
+# Exclude from processing
+# ============================================
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - README.md
+
+# ============================================
+# Analytics (선택사항)
+# ============================================
+# google_analytics: UA-XXXXXXXXX-X
+
+# ============================================
+# Timezone & Language
+# ============================================
+timezone: Asia/Seoul
+lang: ko

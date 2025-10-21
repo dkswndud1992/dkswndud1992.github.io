@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://dkswndud1992.github.io/sitemap.xml
+
+# Disallow admin pages (if any)
+# Disallow: /admin/

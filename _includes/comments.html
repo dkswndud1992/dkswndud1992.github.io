@@ -1,0 +1,44 @@
+<!-- Utterances 댓글 시스템 -->
+<!-- GitHub Issues 기반의 가벼운 댓글 시스템 -->
+<!-- https://utteranc.es/ -->
+
+{% if page.comments != false %}
+<div class="comments-section">
+  <h3>💬 댓글</h3>
+  <script src="https://utteranc.es/client.js"
+          repo="dkswndud1992/dkswndud1992.github.io"
+          issue-term="pathname"
+          label="comment"
+          theme="github-dark"
+          crossorigin="anonymous"
+          async>
+  </script>
+</div>
+
+<style>
+.comments-section {
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 2px solid #333;
+}
+
+.comments-section h3 {
+  margin-bottom: 20px;
+  color: #4ea9da;
+}
+</style>
+{% endif %}
+
+<!-- 
+사용 방법:
+1. GitHub Repository Settings에서 Discussions 또는 Issues 활성화
+2. post.html 레이아웃에서 {% include comments.html %} 추가
+3. repo 이름을 자신의 것으로 변경
+4. theme를 원하는 스타일로 변경 가능:
+   - github-light
+   - github-dark (현재 설정)
+   - github-dark-orange
+   - icy-dark
+   - dark-blue
+   - photon-dark
+-->

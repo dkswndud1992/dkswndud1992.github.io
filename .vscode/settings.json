@@ -1,0 +1,21 @@
+{
+  "files.associations": {
+    "*.scss": "scss",
+    "search.json": "liquid"
+  },
+  "scss.lint.unknownAtRules": "ignore",
+  "css.validate": false,
+  "scss.validate": false,
+  "[json]": {
+    "files.exclude": {
+      "search.json": false
+    }
+  },
+  "json.schemas": [],
+  "files.exclude": {
+    "_site": true,
+    ".sass-cache": true,
+    ".jekyll-cache": true,
+    ".jekyll-metadata": true
+  }
+}

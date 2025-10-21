@@ -1,0 +1,337 @@
+---
+---
+
+// ============================================
+// Dark Theme Configuration
+// ============================================
+
+// Background & Text
+$body-background-color: #1e1e1e;
+$body-text-color: #e0e0e0;
+
+// Links
+$body-link-color: #4ea9da;
+$body-link-hover-color: #6bc1e8; // 호버 시 더 밝게
+
+// Headers
+$header-color: #ffffff;
+$header-link-color: #4ea9da;
+
+// Borders & Accents (필요시 추가)
+$border-color: #333333;
+$code-background-color: #2a2a2a;
+
+// Import theme
+@import "minimal";
+
+// ============================================
+// Custom Overrides
+// ============================================
+
+// 코드 블록 스타일링
+pre, code {
+  background-color: $code-background-color;
+  border: 1px solid $border-color;
+  border-radius: 3px;
+}
+
+// 링크 호버 효과
+a:hover {
+  color: $body-link-hover-color;
+  text-decoration: underline;
+}
+
+// 테이블 스타일
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+  
+  th, td {
+    border: 1px solid $border-color;
+    padding: 8px 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #2a2a2a;
+    font-weight: bold;
+  }
+  
+  tr:hover {
+    background-color: #252525;
+  }
+}
+
+// 인용문 스타일
+blockquote {
+  border-left: 4px solid $body-link-color;
+  padding-left: 1em;
+  margin-left: 0;
+  color: #b0b0b0;
+  font-style: italic;
+}
+
+// ============================================
+// 반응형 디자인
+// ============================================
+
+// 네비게이션 스타일
+header nav {
+  margin: 15px 0;
+  
+  a {
+    padding: 5px 10px;
+    transition: all 0.3s;
+    
+    &:hover {
+      background-color: rgba(78, 169, 218, 0.1);
+      border-radius: 3px;
+    }
+  }
+}
+
+// 포스트 스타일
+.post {
+  max-width: 800px;
+  margin: 0 auto;
+  
+  .post-header {
+    margin-bottom: 30px;
+    border-bottom: 2px solid $border-color;
+    padding-bottom: 20px;
+    
+    h1 {
+      margin-bottom: 10px;
+    }
+  }
+  
+  .post-meta {
+    color: #888;
+    font-size: 0.9em;
+    
+    .tag {
+      display: inline-block;
+      padding: 3px 10px;
+      background-color: #2a2a2a;
+      border: 1px solid $border-color;
+      border-radius: 12px;
+      margin: 2px;
+      font-size: 0.85em;
+      color: $body-link-color;
+    }
+  }
+  
+  .post-content {
+    line-height: 1.8;
+    
+    h2 {
+      margin-top: 40px;
+      border-bottom: 1px solid $border-color;
+      padding-bottom: 10px;
+    }
+    
+    h3 {
+      margin-top: 30px;
+      color: $body-link-color;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      margin: 20px 0;
+    }
+    
+    ul, ol {
+      margin: 15px 0;
+      padding-left: 30px;
+    }
+    
+    li {
+      margin: 8px 0;
+    }
+  }
+  
+  .post-footer {
+    margin-top: 50px;
+    
+    .post-navigation {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      
+      a {
+        padding: 10px 15px;
+        background-color: #2a2a2a;
+        border: 1px solid $border-color;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: all 0.3s;
+        
+        &:hover {
+          background-color: $body-link-color;
+          color: #1e1e1e;
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+}
+
+// 포스트 목록 스타일
+.post-list {
+  list-style: none;
+  padding: 0;
+  
+  li {
+    margin: 25px 0;
+    padding: 20px;
+    background-color: #252525;
+    border-left: 4px solid $body-link-color;
+    border-radius: 5px;
+    transition: all 0.3s;
+    
+    &:hover {
+      transform: translateX(5px);
+      box-shadow: 0 4px 8px rgba(78, 169, 218, 0.2);
+    }
+    
+    h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    
+    .post-meta {
+      color: #888;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+// Footer 스타일
+footer {
+  margin-top: 60px;
+  padding: 30px 0;
+  border-top: 2px solid $border-color;
+  text-align: center;
+  
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .footer-nav {
+    margin: 15px 0;
+    
+    a {
+      margin: 0 10px;
+    }
+  }
+  
+  .footer-tech {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 10px;
+  }
+}
+
+// 검색 래퍼
+.search-wrapper {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+// 반응형 디자인
+@media (max-width: 768px) {
+  header nav {
+    font-size: 0.9em;
+    
+    a {
+      display: inline-block;
+      margin: 5px 2px;
+    }
+  }
+  
+  .post {
+    padding: 0 15px;
+  }
+  
+  .post-navigation {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  table {
+    font-size: 0.85em;
+    
+    th, td {
+      padding: 6px 8px;
+    }
+  }
+}
+
+// 프린트 스타일
+@media print {
+  header nav,
+  .search-wrapper,
+  .post-navigation,
+  footer {
+    display: none;
+  }
+  
+  body {
+    background-color: white;
+    color: black;
+  }
+}
+
+// 유틸리티 클래스
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: 10px; }
+.mt-2 { margin-top: 20px; }
+.mt-3 { margin-top: 30px; }
+
+.mb-1 { margin-bottom: 10px; }
+.mb-2 { margin-bottom: 20px; }
+.mb-3 { margin-bottom: 30px; }
+
+// 애니메이션
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.post-content {
+  animation: fadeIn 0.6s ease-out;
+}
+
+// 스크롤바 커스터마이징 (Webkit 브라우저)
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4ea9da;
+  border-radius: 6px;
+  
+  &:hover {
+    background: #6bc1e8;
+  }
+}

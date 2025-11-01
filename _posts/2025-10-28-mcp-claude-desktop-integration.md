@@ -38,9 +38,14 @@ brew install --cask claude
 
 Claude Desktop은 MCP 서버 설정을 JSON 파일로 관리합니다:
 
-**macOS/Linux:**
+**macOS:**
 ```bash
 ~/Library/Application Support/Claude/claude_desktop_config.json
+```
+
+**Linux:**
+```bash
+~/.config/claude/claude_desktop_config.json
 ```
 
 **Windows:**
@@ -349,8 +354,8 @@ from mcp.server import Server
 from mcp.server.stdio import stdio_server
 from mcp.types import Tool, TextContent
 
-# 허용된 디렉토리 설정 (보안을 위해)
-ALLOWED_DIRECTORY = str(Path.home() / "Documents")
+# 허용된 디렉토리 설정 (보안을 위해 - 환경 변수로도 설정 가능)
+ALLOWED_DIRECTORY = os.environ.get("MCP_ALLOWED_DIR", str(Path.home() / "Documents"))
 
 app = Server("filesystem-server")
 
@@ -644,7 +649,7 @@ Claude Desktop 설정에서 가상환경의 Python을 직접 지정:
 
 #### 서버가 응답하지 않음
 
-타임아웃 설정 추가:
+타임아웃 설정 추가 (밀리초 단위):
 
 ```json
 {
@@ -657,6 +662,8 @@ Claude Desktop 설정에서 가상환경의 Python을 직접 지정:
   }
 }
 ```
+
+> 💡 **참고**: timeout 값은 밀리초 단위입니다. 30000 = 30초
 
 ## 보안 고려사항
 
@@ -694,7 +701,7 @@ function validateInput(input: unknown): asserts input is ValidInput {
 // 환경 변수에서 API 키 읽기
 const API_KEY = process.env.API_KEY;
 if (!API_KEY) {
-  throw new Error('API_KEY environment variable is required');
+  throw new Error('API_KEY 환경 변수가 필요합니다');
 }
 ```
 

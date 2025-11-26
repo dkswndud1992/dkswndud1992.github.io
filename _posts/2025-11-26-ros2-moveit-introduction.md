@@ -123,6 +123,7 @@ class MoveItExample(Node):
         # 목표 포즈 설정
         goal_pose = PoseStamped()
         goal_pose.header.frame_id = "panda_link0"
+        goal_pose.header.stamp = self.get_clock().now().to_msg()
         goal_pose.pose.position.x = x
         goal_pose.pose.position.y = y
         goal_pose.pose.position.z = z
@@ -245,8 +246,16 @@ def add_box_to_scene(planning_scene_interface, box_name, position, size):
 |--------|------|
 | `ros2 launch moveit_setup_assistant setup_assistant.launch.py` | MoveIt 설정 도우미 실행 |
 | `ros2 launch <robot>_moveit_config demo.launch.py` | 로봇 MoveIt 데모 실행 |
-| `ros2 topic list \| grep move_group` | MoveIt 관련 토픽 확인 |
-| `ros2 service list \| grep move_group` | MoveIt 관련 서비스 확인 |
+
+MoveIt 관련 토픽 및 서비스를 확인하려면:
+
+```bash
+# MoveIt 관련 토픽 확인
+ros2 topic list | grep move_group
+
+# MoveIt 관련 서비스 확인
+ros2 service list | grep move_group
+```
 
 ## 문제 해결 가이드
 
